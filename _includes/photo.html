@@ -1,0 +1,5 @@
+{%- if include.src and include.src != "" -%}
+<img class="photo {{ include.class }}" src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy">
+{%- else -%}
+<div class="photo placeholder {{ include.class }}" role="img" aria-label="{{ include.alt }}"><span>[Photo: {{ include.alt }}]</span></div>
+{%- endif -%}
