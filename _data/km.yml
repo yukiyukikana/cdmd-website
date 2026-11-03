@@ -1,0 +1,205 @@
+# ==========================================================
+# KHMER TEXT. Same structure as en.yml.
+# Replace each [Under Construction!] with the Khmer translation.
+# Menu and button labels below should be checked by a native speaker.
+# ==========================================================
+
+org_name: "Cambodian Development Mission for Disability"
+
+nav:
+  home: "ទំព័រដើម"
+  about: "អំពីយើង"
+  work: "ការងាររបស់យើង"
+  team: "ក្រុមការងារ"
+  resources: "ឯកសារ"
+  join: "ចូលរួមជាមួយយើង"
+
+ui:
+  skip: "[Under Construction!]"
+  menu: "ម៉ឺនុយ"
+  other_language: "English"
+  learn_more: "ស្វែងយល់បន្ថែម"
+  read_more: "អានបន្ថែម"
+  read_less: "[Under Construction!]"
+  read_bio: "[Under Construction!]"
+  apply: "ដាក់ពាក្យ"
+  new_tab: "[Under Construction!]"
+  deadline: "[Under Construction!]"
+  download: "ទាញយក (PDF)"
+  coming_soon: "[Under Construction!]"
+  location: "[Under Construction!]"
+  source: "[Under Construction!]"
+  placeholder_data: "[Under Construction!]"
+
+footer:
+  address: "[Under Construction!]"
+  map_url: "https://maps.google.com"
+  map_label: "Google Maps"
+  contact_title: "[Under Construction!]"
+  email: "info@example.org"
+  phone: "[Under Construction!]"
+  follow_title: "[Under Construction!]"
+  facebook: "https://www.facebook.com"
+  registration: "[Under Construction!]"
+
+home:
+  name_html: '<span class="init">C</span>ambodian <span class="init">D</span>evelopment<br><span class="init">M</span>ission for <span class="init">D</span>isability'
+  intro: "[Under Construction!]"
+  hero_button: "[Under Construction!]"
+  hero_photo: ""
+  hero_photo_alt: "[Under Construction!]"
+  tagline: "[Under Construction!]"
+  glance_title: "[Under Construction!]"
+  glance_intro: "[Under Construction!]"
+  charts:
+    - title: "[Under Construction!]"
+      placeholder: true
+      bars:
+        - label: "[Under Construction!]"
+          value: 70
+          display: "XX%"
+        - label: "[Under Construction!]"
+          value: 45
+          display: "XX%"
+      takeaway: "[Under Construction!]"
+      source: "[Under Construction!]"
+  cta_title: "[Under Construction!]"
+  cta_text: "[Under Construction!]"
+  cta_button: "ចូលរួមជាមួយយើង"
+
+about:
+  guides_title: "[Under Construction!]"
+  vision_label: "[Under Construction!]"
+  vision: "[Under Construction!]"
+  mission_label: "[Under Construction!]"
+  mission: "[Under Construction!]"
+  values_label: "[Under Construction!]"
+  values:
+    - icon: dignity
+      name: "[Under Construction!]"
+      text: "[Under Construction!]"
+    - icon: participation
+      name: "[Under Construction!]"
+      text: "[Under Construction!]"
+    - icon: evidence
+      name: "[Under Construction!]"
+      text: "[Under Construction!]"
+    - icon: partnership
+      name: "[Under Construction!]"
+      text: "[Under Construction!]"
+    - icon: integrity
+      name: "[Under Construction!]"
+      text: "[Under Construction!]"
+  message_title: "[Under Construction!]"
+  director_name: "[Under Construction!]"
+  director_title: "[Under Construction!]"
+  director_photo: ""
+  director_photo_alt: "[Under Construction!]"
+  message_intro: "[Under Construction!]"
+  message_rest: "[Under Construction!]"
+  story_title: "[Under Construction!]"
+  story:
+    - year: "[Under Construction!]"
+      text: "[Under Construction!]"
+
+work:
+  intro: "[Under Construction!]"
+  activities_label: "[Under Construction!]"
+  projects_label: "[Under Construction!]"
+  themes:
+    - id: learning
+      title: "[Under Construction!]"
+      summary: "[Under Construction!]"
+      photo: ""
+      photo_alt: "[Under Construction!]"
+      problem: "[Under Construction!]"
+      activities:
+        - "[Under Construction!]"
+      projects:
+        - title: "[Under Construction!]"
+          years: ""
+          partner: ""
+          location: ""
+          description: "[Under Construction!]"
+    - id: employment
+      title: "[Under Construction!]"
+      summary: "[Under Construction!]"
+      photo: ""
+      photo_alt: "[Under Construction!]"
+      problem: "[Under Construction!]"
+      activities:
+        - "[Under Construction!]"
+      projects:
+        - title: "[Under Construction!]"
+          years: ""
+          partner: ""
+          location: ""
+          description: "[Under Construction!]"
+    - id: family
+      title: "[Under Construction!]"
+      summary: "[Under Construction!]"
+      photo: ""
+      photo_alt: "[Under Construction!]"
+      problem: "[Under Construction!]"
+      activities:
+        - "[Under Construction!]"
+      projects:
+        - title: "[Under Construction!]"
+          years: ""
+          partner: ""
+          location: ""
+          description: "[Under Construction!]"
+    - id: research
+      title: "[Under Construction!]"
+      summary: "[Under Construction!]"
+      photo: ""
+      photo_alt: "[Under Construction!]"
+      problem: "[Under Construction!]"
+      activities:
+        - "[Under Construction!]"
+      projects:
+        - title: "[Under Construction!]"
+          years: ""
+          partner: ""
+          location: ""
+          description: "[Under Construction!]"
+
+team:
+  intro: "[Under Construction!]"
+  members:
+    - name: "[Under Construction!]"
+      role: ""
+      photo: ""
+      initials: "N1"
+      bio: "[Under Construction!]"
+    - name: "[Under Construction!]"
+      role: ""
+      photo: ""
+      initials: "N2"
+      bio: "[Under Construction!]"
+    - name: "[Under Construction!]"
+      role: ""
+      photo: ""
+      initials: "N3"
+      bio: "[Under Construction!]"
+
+resources:
+  intro: "[Under Construction!]"
+  items:
+    - title: "[Under Construction!]"
+      type: ""
+      year: "2026"
+      file: ""
+
+join:
+  intro: "[Under Construction!]"
+  openings_title: "[Under Construction!]"
+  jobs:
+    - title: "[Under Construction!]"
+      location: ""
+      deadline: ""
+      apply_url: ""
+      details: "[Under Construction!]"
+  contact_title: "[Under Construction!]"
+  contact_text: "[Under Construction!]"
+  contact_form_url: ""
