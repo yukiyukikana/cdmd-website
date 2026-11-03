@@ -1,0 +1,65 @@
+{%- assign t = site.data[page.lang] -%}
+{%- assign base = '/' | append: page.lang | append: '/' -%}
+
+<section class="hero wrap">
+  <div>
+    <h1 class="org-name">{{ t.home.name_html }}</h1>
+    <p class="lead">{{ t.home.intro }}</p>
+    <a class="btn" href="{{ base | append: 'work/' | relative_url }}">{{ t.home.hero_button }}</a>
+  </div>
+  <div>{% include photo.html src=t.home.hero_photo alt=t.home.hero_photo_alt %}</div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>{{ t.nav.work }}</h2>
+    <p class="sub">{{ t.home.tagline }}</p>
+    <div class="cards">
+      {%- for th in t.work.themes %}
+      <article class="card">
+        {% include photo.html src=th.photo alt=th.photo_alt %}
+        <div class="card-body">
+          <h3>{{ th.title }}</h3>
+          <p>{{ th.summary }}</p>
+          <a class="more" href="{{ base | append: 'work/#' | append: th.id | relative_url }}">{{ t.ui.learn_more }}<span class="sr-only">: {{ th.title }}</span> <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap">
+    <h2>{{ t.home.glance_title }}</h2>
+    <p class="sub">{{ t.home.glance_intro }}</p>
+    <div class="charts">
+      {%- for c in t.home.charts %}
+      <figure class="chart">
+        <h3>{{ c.title }}</h3>
+        {% if c.placeholder %}<p class="badge">{{ t.ui.placeholder_data }}</p>{% endif %}
+        <div>
+          {%- for b in c.bars %}
+          <div class="bar-row">
+            <div class="bar-head"><span>{{ b.label }}</span><strong>{% if b.display %}{{ b.display }}{% else %}{{ b.value }}%{% endif %}</strong></div>
+            <div class="bar-track" aria-hidden="true"><div class="bar-fill{% if forloop.last %} alt{% endif %}" style="width: {{ b.value }}%"></div></div>
+          </div>
+          {%- endfor %}
+        </div>
+        <figcaption>
+          <p class="takeaway">{{ c.takeaway }}</p>
+          <p class="source">{{ t.ui.source }}: {{ c.source }}</p>
+        </figcaption>
+      </figure>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section cta">
+  <div class="wrap">
+    <h2>{{ t.home.cta_title }}</h2>
+    <p>{{ t.home.cta_text }}</p>
+    <a class="btn" href="{{ base | append: 'join/' | relative_url }}">{{ t.home.cta_button }}</a>
+  </div>
+</section>
