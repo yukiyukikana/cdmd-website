@@ -1,0 +1,270 @@
+# ==========================================================
+# ENGLISH TEXT. Edit the text after each colon.
+# Keep the indentation (spaces) exactly as it is.
+# ==========================================================
+
+org_name: "Cambodian Development Mission for Disability"
+
+nav:
+  home: "Home"
+  about: "About Us"
+  work: "Our Work"
+  team: "Team"
+  resources: "Resources"
+  join: "Join Us"
+
+ui:
+  skip: "Skip to main content"
+  menu: "Menu"
+  other_language: "ខ្មែរ"
+  learn_more: "Learn more"
+  read_more: "Read more"
+  read_less: "Show less"
+  read_bio: "Read biography"
+  apply: "Apply"
+  new_tab: "opens in a new tab"
+  deadline: "Deadline"
+  download: "Download (PDF)"
+  coming_soon: "Coming soon"
+  location: "Location"
+  source: "Source"
+  placeholder_data: "Placeholder data – to be replaced"
+
+footer:
+  address: "[Office address – Under Construction!]"
+  map_url: "https://maps.google.com"
+  map_label: "View on Google Maps"
+  contact_title: "Contact"
+  email: "info@example.org"
+  phone: "[Phone number]"
+  follow_title: "Follow Us"
+  facebook: "https://www.facebook.com"
+  registration: "[Registration number – Under Construction!]"
+
+# ---------------- HOME ----------------
+home:
+  name_html: '<span class="init">C</span>ambodian <span class="init">D</span>evelopment<br><span class="init">M</span>ission for <span class="init">D</span>isability'
+  intro: "Many persons with disabilities in Cambodia remain excluded from school, work, and community life. CDMD works with government and community partners to change this."
+  hero_button: "Explore Our Work"
+  hero_photo: ""            # e.g. /assets/images/hero.jpg
+  hero_photo_alt: "Activity or community scene"
+  tagline: "Opening pathways to education, work, and dignified lives for persons with disabilities and their families in Cambodia."
+  glance_title: "Disability in Cambodia at a Glance"
+  glance_intro: "[Under Construction!] A short sentence introducing the figures below."
+  charts:
+    - title: "School attendance of children"
+      placeholder: true
+      bars:
+        - label: "Without disabilities"
+          value: 70
+          display: "XX%"
+        - label: "With disabilities"
+          value: 45
+          display: "XX%"
+      takeaway: "[Under Construction!] One-sentence takeaway."
+      source: "[Source, year]"
+    - title: "Employment rate of adults"
+      placeholder: true
+      bars:
+        - label: "Without disabilities"
+          value: 70
+          display: "XX%"
+        - label: "With disabilities"
+          value: 45
+          display: "XX%"
+      takeaway: "[Under Construction!] One-sentence takeaway."
+      source: "[Source, year]"
+    - title: "Households below the poverty line"
+      placeholder: true
+      bars:
+        - label: "No member with a disability"
+          value: 45
+          display: "XX%"
+        - label: "At least one member with a disability"
+          value: 70
+          display: "XX%"
+      takeaway: "[Under Construction!] One-sentence takeaway."
+      source: "[Source, year]"
+  cta_title: "Interested in working with us?"
+  cta_text: "We welcome partners, researchers, and colleagues who share our commitment to inclusion."
+  cta_button: "Join Us"
+
+# ---------------- ABOUT US ----------------
+about:
+  guides_title: "What Guides Us"
+  vision_label: "Our Vision"
+  vision: "A Cambodia where persons with disabilities learn, work, and live with dignity."
+  mission_label: "Our Mission"
+  mission: "CDMD supports persons with disabilities and their families in Cambodia. We open pathways to education, decent work, and secure livelihoods. We work hand in hand with government and community partners, and we use evidence to improve what we do."
+  values_label: "Our Values"
+  values:
+    - icon: dignity
+      name: "Dignity"
+      text: "We see persons with disabilities as active members of society, not as recipients of charity."
+    - icon: participation
+      name: "Participation"
+      text: "We involve persons with disabilities and their families in designing and implementing our work."
+    - icon: evidence
+      name: "Evidence"
+      text: "We measure our results honestly and learn from them, so that resources go to what works."
+    - icon: partnership
+      name: "Partnership"
+      text: "We work with government, schools, and communities to strengthen existing systems."
+    - icon: integrity
+      name: "Integrity"
+      text: "We manage funds transparently and protect the privacy and safety of the people we serve."
+  message_title: "Message from the Executive Director"
+  director_name: "[Name]"
+  director_title: "Executive Director"
+  director_photo: ""        # e.g. /assets/images/director.jpg
+  director_photo_alt: "Portrait of the Executive Director"
+  message_intro: |
+    [Under Construction!] First paragraph, shown to all visitors. For example, why CDMD is relaunching its work.
+  message_rest: |
+    [Under Construction!] Remaining paragraphs, shown after "Read more." For example, CDMD's priorities and an invitation to partners.
+
+    Each blank line starts a new paragraph.
+  story_title: "Our Story"
+  story:
+    - year: "[Year]"
+      text: "[Under Construction!] Founding of CDMD."
+    - year: "[Year]"
+      text: "[Under Construction!] Earlier activities."
+    - year: "[Year]"
+      text: "[Under Construction!] Period of inactivity."
+    - year: "2026"
+      text: "[Under Construction!] Relaunch of CDMD."
+
+# ---------------- OUR WORK ----------------
+# The four themes also appear as cards on the Home page.
+work:
+  intro: "[Under Construction!] One or two sentences on CDMD's approach."
+  activities_label: "What we do"
+  projects_label: "Projects"
+  themes:
+    - id: learning
+      title: "Learning Support"
+      summary: "We help children with disabilities enter school, stay in school, and learn."
+      photo: ""
+      photo_alt: "Children learning in an inclusive classroom"
+      problem: "Children with disabilities are less likely to enroll in and complete school. [Under Construction!]"
+      activities:
+        - "School enrollment support"
+        - "Learning support and tutoring"
+        - "Teacher awareness and training"
+        - "Inclusive school environments"
+      projects:
+        - title: "[Project title – Under Construction!]"
+          years: "[Years]"
+          partner: "[Partner]"
+          location: "[Province]"
+          description: "[Under Construction!] Description and results of the project."
+    - id: employment
+      title: "Employment Support"
+      summary: "We provide skills training and employment support for persons with disabilities."
+      photo: ""
+      photo_alt: "Skills training session"
+      problem: "Adults with disabilities face barriers to skills and decent work. [Under Construction!]"
+      activities:
+        - "Vocational skills training"
+        - "Job matching and placement"
+        - "Engagement with employers"
+      projects:
+        - title: "[Project title – Under Construction!]"
+          years: "[Years]"
+          partner: "[Partner]"
+          location: "[Province]"
+          description: "[Under Construction!] Description and results of the project."
+    - id: family
+      title: "Family Support"
+      summary: "We support families of persons with disabilities to stay economically secure."
+      photo: ""
+      photo_alt: "Family activity"
+      problem: "Households with a member with a disability face extra costs and lost income. [Under Construction!]"
+      activities:
+        - "Linking families to social protection"
+        - "Caregiver support"
+        - "Keeping siblings in school"
+      projects:
+        - title: "[Project title – Under Construction!]"
+          years: "[Years]"
+          partner: "[Partner]"
+          location: "[Province]"
+          description: "[Under Construction!] Description and results of the project."
+    - id: research
+      title: "Research and Evidence"
+      summary: "We generate evidence to improve our programs and inform policy."
+      photo: ""
+      photo_alt: "Survey data collection"
+      problem: "Reliable data on persons with disabilities in Cambodia remain limited. [Under Construction!]"
+      activities:
+        - "Needs assessments and surveys"
+        - "Monitoring and evaluation of programs"
+        - "Policy briefs shared with government partners"
+      projects:
+        - title: "[Project title – Under Construction!]"
+          years: "[Years]"
+          partner: "[Partner]"
+          location: "[Province]"
+          description: "[Under Construction!] Description and results of the project."
+
+# ---------------- TEAM ----------------
+team:
+  intro: "[Under Construction!] One sentence introducing the team."
+  members:
+    - name: "[Name 1]"
+      role: "[Role]"
+      photo: ""              # e.g. /assets/images/team1.jpg
+      initials: "N1"
+      bio: "[Under Construction!] Short biography."
+    - name: "[Name 2]"
+      role: "[Role]"
+      photo: ""
+      initials: "N2"
+      bio: "[Under Construction!] Short biography."
+    - name: "[Name 3]"
+      role: "[Role]"
+      photo: ""
+      initials: "N3"
+      bio: "[Under Construction!] Short biography."
+
+# ---------------- RESOURCES ----------------
+# Newest first. Put PDFs in assets/docs/ and write the path in "file".
+resources:
+  intro: "Annual reports, research, and other documents from CDMD."
+  items:
+    - title: "[Annual Report 2026 – Under Construction!]"
+      type: "Annual Report"
+      year: "2026"
+      file: ""               # e.g. /assets/docs/annual-report-2026.pdf
+
+# ---------------- JOIN US ----------------
+# Paste the KoboToolbox or Google Form link in "apply_url".
+join:
+  intro: "[Under Construction!] Two or three sentences on why people join CDMD."
+  openings_title: "Current Openings"
+  jobs:
+    - title: "Enumerator Roster"
+      location: "Various provinces"
+      deadline: "Open continuously"
+      apply_url: ""          # e.g. https://ee.kobotoolbox.org/x/XXXX
+      details: |
+        CDMD is building a roster of enumerators for upcoming surveys across Cambodia. Registration is not a job offer. Registered candidates will be contacted when positions become available.
+
+        #### Main tasks
+        - Conduct face-to-face interviews with households and individuals
+        - Record data accurately on tablets or smartphones
+        - Follow ethical and data protection procedures
+
+        #### Requirements
+        - Fluency in Khmer
+        - Completed secondary or university education
+        - Comfortable using tablets or smartphones
+        - Willing to travel to different provinces
+        - Experience working with persons with disabilities is an advantage
+
+        #### How to apply
+        Click "Apply" and complete the registration form.
+  contact_title: "Contact Us"
+  contact_text: "For partnership opportunities or general inquiries, please write to us or use the form."
+  contact_form_url: ""       # Google Form embed link (ends with ?embedded=true)
