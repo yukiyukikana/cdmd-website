@@ -1,0 +1,45 @@
+{%- assign t = site.data[page.lang] -%}
+{%- assign j = t.join -%}
+
+<section class="page-head wrap">
+  <h1>{{ t.nav.join }}</h1>
+  <p class="sub">{{ j.intro }}</p>
+</section>
+
+<section class="section wrap" aria-labelledby="openings">
+  <h2 id="openings">{{ j.openings_title }}</h2>
+  <div class="accordion">
+    {%- for job in j.jobs %}
+    <details class="item job">
+      <summary>
+        <span class="chev" aria-hidden="true"></span>
+        <span class="item-title">{{ job.title }}</span>
+        <span class="item-meta"><span>{{ job.location }}</span><span>{{ t.ui.deadline }}: {{ job.deadline }}</span></span>
+        {%- if job.apply_url and job.apply_url != "" %}
+        <a class="btn apply" href="{{ job.apply_url }}" target="_blank" rel="noopener">{{ t.ui.apply }}<span class="sr-only">: {{ job.title }} ({{ t.ui.new_tab }})</span></a>
+        {%- endif %}
+      </summary>
+      <div class="item-body">
+        {{ job.details | markdownify }}
+      </div>
+    </details>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section section-tint" aria-labelledby="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2 id="contact">{{ j.contact_title }}</h2>
+      <p>{{ j.contact_text }}</p>
+      <p><a href="mailto:{{ t.footer.email }}">{{ t.footer.email }}</a></p>
+    </div>
+    <div>
+      {%- if j.contact_form_url and j.contact_form_url != "" %}
+      <iframe class="form-embed" src="{{ j.contact_form_url }}" title="{{ j.contact_title }}" loading="lazy"></iframe>
+      {%- else %}
+      <div class="form-placeholder">[Contact form: Under Construction!]</div>
+      {%- endif %}
+    </div>
+  </div>
+</section>
