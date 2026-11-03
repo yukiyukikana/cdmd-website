@@ -1,0 +1,46 @@
+{%- assign t = site.data[page.lang] -%}
+{%- assign w = t.work -%}
+
+<section class="page-head wrap">
+  <h1>{{ t.nav.work }}</h1>
+  <p class="sub">{{ w.intro }}</p>
+  <nav class="jump" aria-label="{{ t.nav.work }}">
+    {%- for th in w.themes %}
+    <a class="btn btn-outline" href="#{{ th.id }}">{{ th.title }}</a>
+    {%- endfor %}
+  </nav>
+</section>
+
+{%- for th in w.themes %}
+<section id="{{ th.id }}" class="theme wrap" aria-labelledby="{{ th.id }}-title">
+  <div class="theme-grid">
+    <div>{% include photo.html src=th.photo alt=th.photo_alt %}</div>
+    <div>
+      <h2 id="{{ th.id }}-title">{{ th.title }}</h2>
+      <p>{{ th.problem }}</p>
+      <h3>{{ w.activities_label }}</h3>
+      <ul class="activities">
+        {%- for act in th.activities %}
+        <li>{{ act }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+  <h3>{{ w.projects_label }}</h3>
+  <div class="accordion">
+    {%- for p in th.projects %}
+    <details class="item">
+      <summary>
+        <span class="chev" aria-hidden="true"></span>
+        <span class="item-title">{{ p.title }}</span>
+        <span class="item-meta"><span>{{ p.years }}</span>{% if p.partner %}<span>{{ p.partner }}</span>{% endif %}</span>
+      </summary>
+      <div class="item-body">
+        {{ p.description | markdownify }}
+        {% if p.location %}<p><strong>{{ t.ui.location }}:</strong> {{ p.location }}</p>{% endif %}
+      </div>
+    </details>
+    {%- endfor %}
+  </div>
+</section>
+{%- endfor %}
