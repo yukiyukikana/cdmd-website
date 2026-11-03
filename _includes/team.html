@@ -1,0 +1,26 @@
+{%- assign t = site.data[page.lang] -%}
+
+<section class="page-head wrap">
+  <h1>{{ t.nav.team }}</h1>
+  <p class="sub">{{ t.team.intro }}</p>
+</section>
+
+<section class="section wrap">
+  <div class="team">
+    {%- for m in t.team.members %}
+    <article class="member">
+      {%- if m.photo and m.photo != "" %}
+      <img class="avatar" src="{{ m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy">
+      {%- else %}
+      <div class="avatar initials" aria-hidden="true">{{ m.initials }}</div>
+      {%- endif %}
+      <h2 class="member-name">{{ m.name }}</h2>
+      <p class="role">{{ m.role }}</p>
+      <details class="readmore bio">
+        <summary><span class="when-closed">{{ t.ui.read_bio }}</span><span class="when-open">{{ t.ui.read_less }}</span></summary>
+        {{ m.bio | markdownify }}
+      </details>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
