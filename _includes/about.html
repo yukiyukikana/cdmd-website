@@ -1,0 +1,58 @@
+{%- assign t = site.data[page.lang] -%}
+{%- assign a = t.about -%}
+
+<section class="page-head wrap">
+  <h1>{{ t.nav.about }}</h1>
+</section>
+
+<section class="section wrap" aria-labelledby="guides">
+  <h2 id="guides">{{ a.guides_title }}</h2>
+  <div class="vm">
+    <div>
+      <p class="eyebrow">{{ a.vision_label }}</p>
+      <p class="vision">{{ a.vision }}</p>
+    </div>
+    <div>
+      <p class="eyebrow">{{ a.mission_label }}</p>
+      <p>{{ a.mission }}</p>
+    </div>
+  </div>
+  <p class="eyebrow">{{ a.values_label }}</p>
+  <div class="values">
+    {%- for v in a.values %}
+    <div class="value">
+      {% include icon.html name=v.icon %}
+      <h3>{{ v.name }}</h3>
+      <p>{{ v.text }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section section-tint" aria-labelledby="message">
+  <div class="wrap">
+    <h2 id="message">{{ a.message_title }}</h2>
+    <div class="message-grid">
+      <div class="message-photo">
+        {% include photo.html src=a.director_photo alt=a.director_photo_alt class="portrait" %}
+        <p class="sig"><strong>{{ a.director_name }}</strong><br>{{ a.director_title }}</p>
+      </div>
+      <div>
+        {{ a.message_intro | markdownify }}
+        <details class="readmore">
+          <summary><span class="when-closed">{{ t.ui.read_more }}</span><span class="when-open">{{ t.ui.read_less }}</span></summary>
+          {{ a.message_rest | markdownify }}
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="story">
+  <h2 id="story">{{ a.story_title }}</h2>
+  <ol class="timeline">
+    {%- for s in a.story %}
+    <li><span class="year">{{ s.year }}</span>{{ s.text }}</li>
+    {%- endfor %}
+  </ol>
+</section>
