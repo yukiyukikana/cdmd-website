@@ -1,0 +1,26 @@
+title: "Cambodian Development Mission for Disability"
+short_name: "CDMD"
+
+# Replace YOUR-USERNAME with your GitHub username.
+url: "https://YOUR-USERNAME.github.io"
+# Must match your repository name, with a leading slash.
+baseurl: "/cdmd-website"
+
+# Order of pages in the menu. "slug" is the address after /en/ or /km/.
+nav:
+  - key: home
+    slug: ""
+  - key: about
+    slug: "about/"
+  - key: work
+    slug: "work/"
+  - key: team
+    slug: "team/"
+  - key: resources
+    slug: "resources/"
+  - key: join
+    slug: "join/"
+
+markdown: kramdown
+exclude:
+  - README.md
