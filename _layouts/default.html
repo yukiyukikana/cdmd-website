@@ -1,0 +1,64 @@
+<!doctype html>
+{%- assign t = site.data[page.lang] -%}
+{%- if page.lang == "en" -%}{%- assign other = "km" -%}{%- else -%}{%- assign other = "en" -%}{%- endif -%}
+<html lang="{{ page.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.key == "home" %}{{ t.org_name }}{% else %}{{ t.nav[page.key] }} | CDMD{% endif %}</title>
+<meta name="description" content="{{ t.home.tagline }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Noto+Serif+Khmer:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+<a class="skip" href="#main">{{ t.ui.skip }}</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ '/' | append: page.lang | append: '/' | relative_url }}">CDMD<span class="sr-only"> – {{ t.nav.home }}</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">{{ t.ui.menu }}</button>
+    <nav id="site-nav" class="site-nav" aria-label="{{ t.ui.menu }}">
+      <ul>
+        {%- for p in site.nav %}
+        <li><a href="{{ '/' | append: page.lang | append: '/' | append: p.slug | relative_url }}"{% if p.key == page.key %} aria-current="page"{% endif %}>{{ t.nav[p.key] }}</a></li>
+        {%- endfor %}
+        <li class="lang-switch"><a href="{{ '/' | append: other | append: '/' | append: page.slug | relative_url }}" lang="{{ other }}" hreflang="{{ other }}">{{ t.ui.other_language }}</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{% include {{ page.key }}.html %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>{{ t.org_name }}</h2>
+        <p>{{ t.footer.address }}</p>
+        <p><a href="{{ t.footer.map_url }}" target="_blank" rel="noopener">{{ t.footer.map_label }}</a></p>
+      </div>
+      <div>
+        <h2>{{ t.footer.contact_title }}</h2>
+        <p><a href="mailto:{{ t.footer.email }}">{{ t.footer.email }}</a></p>
+        <p>{{ t.footer.phone }}</p>
+      </div>
+      <div>
+        <h2>{{ t.footer.follow_title }}</h2>
+        <p><a href="{{ t.footer.facebook }}" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>{{ t.footer.registration }}</p>
+      <p>© {{ site.time | date: "%Y" }} CDMD</p>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
