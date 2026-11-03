@@ -1,0 +1,24 @@
+{%- assign t = site.data[page.lang] -%}
+
+<section class="page-head wrap">
+  <h1>{{ t.nav.resources }}</h1>
+  <p class="sub">{{ t.resources.intro }}</p>
+</section>
+
+<section class="section wrap">
+  <ul class="doc-list">
+    {%- for d in t.resources.items %}
+    <li>
+      <div>
+        <p class="doc-title">{{ d.title }}</p>
+        <p class="doc-meta">{{ d.type }} · {{ d.year }}</p>
+      </div>
+      {%- if d.file and d.file != "" %}
+      <a class="btn btn-outline" href="{{ d.file | relative_url }}" download>{{ t.ui.download }}<span class="sr-only">: {{ d.title }}</span></a>
+      {%- else %}
+      <span class="doc-meta">{{ t.ui.coming_soon }}</span>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
